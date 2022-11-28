@@ -27,9 +27,11 @@ As an user, I want to be able to generate a password that includes some characte
     <li>The application must generate a password when the button is clicked.</li>
     <li>The application presents a series of prompts for password criteria.</li>
     <li>Password criteria are concerned with  the following options:
+    <ul>
         <li>length of password;</li>
         <li>at least 10 characters but no more than 64;</li>
         <li>character types - lowercase, uppercase, numeric, special characters.</li>
+    </ul>
     </li>
     <li>Code should validate for each input and at least one character type should be selected.</li>
     <li>Once all prompted are answered, the password should be generated and displayed in an alert or written to the page.</li>
