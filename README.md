@@ -49,3 +49,6 @@ As an user, I want to be able to generate a password that includes some characte
 ## Installation
 The current project does not require any installation. The user should only click on the Generate Password button and follow the instructions.
 
+## Usage
+In light of the above, the user should only click on the Generate Password red button and follow the instructions. Password options will be suggested to faciliate the password creation.
+
