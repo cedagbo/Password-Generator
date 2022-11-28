@@ -60,7 +60,7 @@ Password Generator is under MIT License.
 ## Deployment
 <ul>
     <li>Website: </li>
-    <li>Repository: </li>
+    <li>Repository: https://github.com/cedagbo/Password-Generator </li>
 </ul>
 
 ## Author
