@@ -52,3 +52,4 @@ The current project does not require any installation. The user should only clic
 ## Usage
 In light of the above, the user should only click on the Generate Password red button and follow the instructions. Password options will be suggested to faciliate the password creation.
 
+## Documentation
