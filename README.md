@@ -45,3 +45,7 @@ As an user, I want to be able to generate a password that includes some characte
     <li>CSS 3</li>
     <li>JavaScript ES5</li>
 </ul>
+
+## Installation
+The current project does not require any installation. The user should only click on the Generate Password button and follow the instructions.
+
