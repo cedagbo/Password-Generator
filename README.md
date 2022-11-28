@@ -26,7 +26,7 @@ As an user, I want to be able to generate a password that includes some characte
 <ul>
     <li>The application must generate a password when the button is clicked.</li>
     <li>The application presents a series of prompts for password criteria.</li>
-    <li>Password criteria are concerned with  the following options:
+    <li>The latter are concerned with  the following options:
     <ul>
         <li>length of password;</li>
         <li>at least 10 characters but no more than 64;</li>
