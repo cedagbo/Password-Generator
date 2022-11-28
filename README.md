@@ -16,3 +16,5 @@ Password Generator is an application implemented to enable any user to generate 
     <li>Deployment</li>
     <li>Author</li>
 </ul>
+
+## Screenshot
