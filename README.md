@@ -57,3 +57,9 @@ In light of the above, the user should only click on the Generate Password red b
 ## License
 Password Generator is under MIT License. 
 
+## Deployment
+<ul>
+    <li>Website: </li>
+    <li>Repository: </li>
+</ul>
+
