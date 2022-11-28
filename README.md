@@ -38,3 +38,10 @@ As an user, I want to be able to generate a password that includes some characte
     <li>Repository follows best practices for file structure and naming conventions.</li>
     <li>Repository contains multiple descriptive commit messages.</li>
 </ul>
+
+## Technologies used
+<ul>
+    <li>HTML 5</li>
+    <li>CSS 3</li>
+    <li>JavaScript ES5</li>
+</ul>
