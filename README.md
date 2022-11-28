@@ -63,3 +63,5 @@ Password Generator is under MIT License.
     <li>Repository: </li>
 </ul>
 
+## Author
+@cedagbo
