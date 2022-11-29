@@ -174,8 +174,6 @@ function generatePassword() {
     '_',
     '.'
   ];
-  // Let us initialise possibleCharacters
-  var possibleCharacters = [];
 
   // Retrieving the user input and checking it throughout the process
   charactersNumber = prompt("Please, enter your password. Choose between 8 and 64 characters.");
@@ -226,19 +224,19 @@ function generatePassword() {
     return "Please select at least one character type.";
   };
 
-  // Let us initialise password parameters
-  var passwordCharacters = []
-  if (confLowerCasedCharacters) {
-    passwordCharacters = passwordCharacters.concat(lowerCasedCharacters)
+  // Let us initialise possibleCharacters
+  var possibleCharacters = [];
+  if (considerLowercase) {
+    possibleCharacters = possibleCharacters.concat(lowerCasedCharacters)
   }
-  if (confUpperCasedCharacters) {
-    passwordCharacters = passwordCharacters.concat(upperCasedCharacters)
+  if (considerUppercase) {
+    possibleCharacters = possibleCharacters.concat(upperCasedCharacters)
   }
-  if (confNumericCharacters) {
-    passwordCharacters = passwordCharacters.concat(numericCharacters)
+  if (considerNumericCharacters) {
+    possibleCharacters = possibleCharacters.concat(numericCharacters)
   }
-  if (confSpecialCharacters) {
-    passwordCharacters = passwordCharacters.concat(specialCharacters)
+  if (considerSpecialCharacters) {
+    possibleCharacters = possibleCharacters.concat(specialCharacters)
   }
 
   // Looping through the final password
