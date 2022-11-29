@@ -66,4 +66,4 @@ Password Generator is under MIT License.
 </ul>
 
 ## Author
-@cedagbo
+Copyright (c) 2022 Chris-Eric Dagbo
