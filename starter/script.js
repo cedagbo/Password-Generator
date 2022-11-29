@@ -89,32 +89,142 @@ var upperCasedCharacters = [
   'Z'
 ];
 
-// Function to prompt user for password options
-function getPasswordOptions() {
-
-}
-
-// Function for getting a random element from an array
-function getRandom(arr) {
-
-}
-
 // Function to generate password with user input
 function generatePassword() {
-  var characterLength = prompt("Please enter a password. It should be between 10 and 64 characters.");
-  //Set the conditions in case the user does not follow some instructions well defined
-  if(characterLength <= 9 || characterLength >=65){
-    alert("Please follow the instructions. Password must be at least 10 characters length and no more than 64.");
-    var characterLength = prompt("What's the length of the password you want to generate?")
-  } else {
-    alert("Your password will have " ${charactersLength} "characters.");
-  }
   
-  // Set out the password criteria 
-  var confLowerCasedCharacters = confirm("Click OK whether you want to include lowercase characters");
-  var confUpperCasedCharacters = confirm("Click OK if you want to consider uppercase in yyour password");
-  var confNumericCharacters = confirm("Click OK if you want your password to contain numeric characters.");
-  var confSpecialCharacters = confirm("Click OK if you choose to include special characters");
+  var lowerCasedCharacters = [
+    'a',
+    'b',
+    'c',
+    'd',
+    'e',
+    'f',
+    'g',
+    'h',
+    'i',
+    'j',
+    'k',
+    'l',
+    'm',
+    'n',
+    'o',
+    'p',
+    'q',
+    'r',
+    's',
+    't',
+    'u',
+    'v',
+    'w',
+    'x',
+    'y',
+    'z'
+  ];
+  var upperCasedCharacters = [
+    'A',
+    'B',
+    'C',
+    'D',
+    'E',
+    'F',
+    'G',
+    'H',
+    'I',
+    'J',
+    'K',
+    'L',
+    'M',
+    'N',
+    'O',
+    'P',
+    'Q',
+    'R',
+    'S',
+    'T',
+    'U',
+    'V',
+    'W',
+    'X',
+    'Y',
+    'Z'
+  ];
+  var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+  var specialCharacters = [
+    '@',
+    '%',
+    '+',
+    '\\',
+    '/',
+    "'",
+    '!',
+    '#',
+    '$',
+    '^',
+    '?',
+    ':',
+    ',',
+    ')',
+    '(',
+    '}',
+    '{',
+    ']',
+    '[',
+    '~',
+    '-',
+    '_',
+    '.'
+  ];
+  // Let us initialise possibleCharacters
+  var possibleCharacters = [];
+
+  // Retrieving the user input and checking it throughout the process
+  charactersNumber = prompt("Please, enter your password. Choose between 8 and 64 characters.");
+  if (charactersNumber < 8 || charactersNumber > 64) {
+    return "Please enter a valid number of characters. Password length should be at least 8 and no more than 64.";
+  } else if (isNaN(charactersNumber)) {
+    charactersNumber = prompt("Please enter a valid number.");
+  }
+  else {
+    alert("Your password will be " + charactersNumber + " characters long.");
+    
+  }
+
+  // Provide password options and validate the user input
+  considerLowercase = confirm("Click OK if you want to include lowercase characters.");
+  if (considerLowercase) {
+    alert("Your password will have lowercase characters.");
+  }
+  else {
+    alert("Your password will not have lowercase characters.");
+  }
+
+  considerUppercase = confirm("Click OK if you want uppercase characters?");
+  if (considerUppercase) {
+    alert("Your password will have uppercase characters.");
+  }
+  else {
+    alert("Your password will not have uppercase characters.");
+  }
+
+  considerNumericCharacters = confirm("Click OK if you consider to include numbers?");
+  if (considerNumericCharacters) {
+    alert("Your password will have numeric characters.");
+  }
+  else {
+    alert("Your password will not contain numeric characters.");
+  }
+
+  considerSpecialCharacters = confirm("Click Ok if you want special characters?");
+  if (considerSpecialCharacters) {
+    alert("Your password will have special characters.");
+  }
+  else {
+    alert("Your password will not include special characters.");
+  }
+
+  if (considerLowercase === false && considerUppercase === false && considerNumericCharacters === false && considerSpecialCharacters === false) {
+    return "Please select at least one character type.";
+  };
 
   // Let us initialise password parameters
   var passwordCharacters = []
