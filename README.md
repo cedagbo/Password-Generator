@@ -59,6 +59,10 @@ The current project does not require any installation. The user should only clic
 In light of the above, the user should only click on the Generate Password red button and follow the instructions. Password options will be suggested to faciliate the password creation.
 
 ## Documentation
+<ul>
+    <li>https://www.w3schools.com</li>
+    <li>https://www.developer.mozilla.org/en-US/</li>
+</ul>
 
 ## License
 Password Generator is under MIT License. 
