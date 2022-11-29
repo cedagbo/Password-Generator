@@ -106,28 +106,38 @@ function generatePassword() {
   if(characterLength <= 9 || characterLength >=65){
     alert("Please follow the instructions. Password must be at least 10 characters length and no more than 64.");
     var characterLength = prompt("What's the length of the password you want to generate?")
+  } else {
+    alert("Your password will have " ${charactersLength} "characters.");
   }
-  alert("Your password will have " + charactersLength + "characters.");
-}
-// Set out the password criteria 
-var confLowerCasedCharacters = confirm("Click OK whether you want to include lowercase characters");
-var confUpperCasedCharacters = confirm("Click OK if you want to consider uppercase in yyour password");
-var confNumericCharacters = confirm("Click OK if you want your password to contain numeric characters.");
-var confSpecialCharacters = confirm("Click OK if you choose to include special characters");
+  
+  // Set out the password criteria 
+  var confLowerCasedCharacters = confirm("Click OK whether you want to include lowercase characters");
+  var confUpperCasedCharacters = confirm("Click OK if you want to consider uppercase in yyour password");
+  var confNumericCharacters = confirm("Click OK if you want your password to contain numeric characters.");
+  var confSpecialCharacters = confirm("Click OK if you choose to include special characters");
 
-// Let us initialise password parameters
-var passwordCharacters = []
-if (confLowerCasedCharacters) {
-  passwordCharacters = passwordCharacters.concat(lowerCasedCharacters)
-}
-if (confUpperCasedCharacters) {
-  passwordCharacters = passwordCharacters.concat(upperCasedCharacters)
-}
-if (confNumericCharacters) {
-  passwordCharacters = passwordCharacters.concat(numericCharacters)
-}
-if (confSpecialCharacters) {
-  passwordCharacters = passwordCharacters.concat(specialCharacters)
+  // Let us initialise password parameters
+  var passwordCharacters = []
+  if (confLowerCasedCharacters) {
+    passwordCharacters = passwordCharacters.concat(lowerCasedCharacters)
+  }
+  if (confUpperCasedCharacters) {
+    passwordCharacters = passwordCharacters.concat(upperCasedCharacters)
+  }
+  if (confNumericCharacters) {
+    passwordCharacters = passwordCharacters.concat(numericCharacters)
+  }
+  if (confSpecialCharacters) {
+    passwordCharacters = passwordCharacters.concat(specialCharacters)
+  }
+
+  // Looping through the final password
+  var randomPassword = ""
+  for ( var i = 0; i < characterLength; i++){
+    var j = [Math.floor(Math.random() * possibleCharacters.length)];
+    randomPassword = randomPassword + possibleCharacters[j];
+  }
+  return randomPassword;
 }
 
 // Get references to the #generate element
