@@ -18,6 +18,10 @@ Password Generator is an application implemented to enable any user to generate 
 </ul>
 
 ## Screenshot
+<img src="./assets/05-javascript-challenge-demo.png" alt="Webpage screenshot">
+<br/>
+
+#
 
 ## User story
 As an user, I want to be able to generate a password that includes some characters types such as lowercase, uppercase, number and special characters.
