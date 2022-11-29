@@ -1,3 +1,4 @@
+// (Data already given!) Initialising password options as arrays that the user should consider along the way
 // Array of special characters to be included in password
 var specialCharacters = [
   '@',
@@ -100,8 +101,19 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
-
+  var characterLength = prompt("Please enter a password. It should be between 10 and 64 characters.");
+  //Set the conditions in case the user does not follow some instructions well defined
+  if(characterLength <= 9 || characterLength >=65){
+    alert("Please follow the instructions. Password must be at least 10 characters length and no more than 64.");
+    var characterLength = prompt("Please what's the length of the password you want to generate?")
+  }
+  alert("Your password will have ${characterLength} characters.");
 }
+  // Set out the password criteria 
+  var confLowerCasedCharacters = confirm("Click OK whether you want to include lowercase characters");
+  var confUpperCasedCharacters = confirm("Click OK if you want to consider uppercase in yyour password");
+  var confNumericCharacters = confirm("Click OK if you want your password to contain numeric characters.");
+  var confSpecialCharacters = confirm("Click OK if you choose to include special characters");
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
