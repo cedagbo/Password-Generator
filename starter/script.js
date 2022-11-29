@@ -241,7 +241,7 @@ function generatePassword() {
 
   // Looping through the final password
   var randomPassword = ""
-  for ( var i = 0; i < characterLength; i++){
+  for ( var i = 0; i < charactersNumber; i++){
     var j = [Math.floor(Math.random() * possibleCharacters.length)];
     randomPassword = randomPassword + possibleCharacters[j];
   }
